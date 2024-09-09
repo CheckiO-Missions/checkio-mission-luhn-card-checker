@@ -1,0 +1,52 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Utilisez <a target="_blank" href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a> pour valider les numéros de cartes de crédit. Chaque numéro de carte de crédit est donné sous forme de chaîne et a une forme correcte de quatre blocs de quatre chiffres, séparés par un simple espace.
+</p>
+
+<p style="text-align: justify;">
+    Dans ce but particulier, l'algorithme comprend les étapes suivantes:
+    <ol>
+        <li><p>Doublez un chiffre sur deux en commençant par le plus à droite.</p></li>
+        <li><p>Si le résultat du doublement est supérieur à 9, additionnez les chiffres du nombre.</p></li>
+        <li><p>Additionnez tous les chiffres.</p></li>
+        <li><p>Vérifiez si la somme est clairement divisible par 10.</p></li>
+    </ol>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}luhn-checker.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Chaîne <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Valeur booléenne <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
