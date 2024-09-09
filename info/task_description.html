@@ -4,6 +4,16 @@
     Use <a target="_blank" href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a> to validate credit card numbers. Every credit card number is given as a string and has a correct form of four four-digit blocks, separated by single whitespace.
 </p>
 
+<p style="text-align: justify;">
+    For this particular purpose, the algorithm includes such steps:
+    <ol>
+        <li><p>Double every second digits starting from the rightmost.</p></li>
+        <li><p>If the result of doubling is greater than 9, add the digits of the number.</p></li>
+        <li><p>Sum all digits.</p></li>
+        <li><p>Check if the sum is clearly divisible by 10.</p></li>
+    </ol>
+</p>
+
 <p style="text-align: center;">
     <img  title="example" src="{{MEDIA}}luhn-checker.svg" alt="example" style="max-height: 200px"/>
 </p>
