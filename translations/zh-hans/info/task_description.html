@@ -1,0 +1,52 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    使用<a target="_blank" href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a> 验证信用卡号码。每个信用卡号码都是以字符串形式给出的，其正确形式是由四个四位数块组成，中间用单个空格隔开。
+</p>
+
+<p style="text-align: justify;">
+    为此，算法包括以下步骤：
+    <ol>
+        <li><p>从最右边的数字开始，每两位数字加倍。</p></li>
+        <li><p>如果加倍的结果大于 9，则将数字相加。</p></li>
+        <li><p>将所有数字相加。</p></li>
+        <li><p>检查总和是否能被 10 整除。</p></li>
+    </ol>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}luhn-checker.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出： 布尔值</strong>布尔值 <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
