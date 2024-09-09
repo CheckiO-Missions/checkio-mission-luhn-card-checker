@@ -1,0 +1,52 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Verwenden Sie <a target="_blank" href="https://en.wikipedia.org/wiki/Luhn_algorithm">Luhn algorithm</a>, um Kreditkartennummern zu überprüfen. Jede Kreditkartennummer wird als String angegeben und hat eine korrekte Form aus vier vierstelligen Blöcken, die durch ein Leerzeichen getrennt sind.
+</p>
+
+<p style="text-align: justify;">
+    Für diesen speziellen Zweck umfasst der Algorithmus solche Schritte:
+    <ol>
+        <li><p>Verdoppeln Sie jede zweite Ziffer, beginnend mit der äußersten rechten Ziffer.</p></li>
+        <li><p>Wenn das Ergebnis der Verdopplung größer als 9 ist, addieren Sie die Ziffern der Zahl.</p></li>
+        <li><p>Addieren Sie alle Ziffern.</p></li>
+        <li><p>Prüfen Sie, ob die Summe eindeutig durch 10 teilbar ist.</p></li>
+    </ol>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}luhn-checker.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zeichenkette <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Boolescher Wert <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
